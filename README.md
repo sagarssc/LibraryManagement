@@ -1,4 +1,6 @@
 Setup:
+
+
     python instllation and create virtualenv:
       for mac:    
         brew install python 
