@@ -136,3 +136,5 @@ STATIC_ROOT = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'user.User'
+
+CSRF_TRUSTED_ORIGINS = ['library-mgmt-test.herokuapp.com']
