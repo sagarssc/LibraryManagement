@@ -53,7 +53,7 @@ class BookViewSet(viewsets.ModelViewSet):
 			raise serializers.ValidationError('User dont have permissions to remove book')
 
 class BorrowViewSet(viewsets.ModelViewSet):
-	queryset = Book.objects.all()
+	queryset = Book.objects.filter(is_deleted=False)
 
 	@action(detail=False,methods=['get'],permission_classes=[IsAuthenticated])
 	def get_books(self, request, *args, **kwargs):

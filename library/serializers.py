@@ -17,7 +17,7 @@ class BookSerializer(serializers.ModelSerializer):
 		data = {
 			"id": obj.id,
 			"name": obj.name,
-			"status": "AVAILABLE" if obj.is_available else "Not AVAILABLE"
+			"status": "AVAILABLE" if obj.is_available() else "Not AVAILABLE"
 		}
 		return data
 
