@@ -137,4 +137,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'user.User'
 
-CSRF_TRUSTED_ORIGINS = ['http://library-mgmt-test.herokuapp.com','https://library-mgmt-test.herokuapp.com/']
+CSRF_TRUSTED_ORIGINS = ['http://library-mgmt-test.herokuapp.com','https://library-mgmt-test.herokuapp.com']
